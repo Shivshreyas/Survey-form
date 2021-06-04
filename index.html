@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SurveyForm</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+
+    <body>  
+    
+    <h1 id="title"> PREFFERED CAR BRAND SURVEY </h1>
+    <p id="description"> Thank you! for taking the time to help us improve the platform </p>
+     <form id="survey-form">
+
+
+        <label id="name-label">Name:</label> 
+
+             <input type="text" name="name" id="name" class= "form-input" required placeholder="First name"> </input> <br>
+
+        <label id="email-label">Email:</label> 
+             <input type="email" name="email" id="email" class= "form-input" required placeholder="Email"> </input> <br>
+
+
+        <label id="number-label">Age:</label> 
+             <input type="number" name="number" id="number" min="0" max="10"  class= "form-input" required placeholder="#"> </input> <br>
+
+
+         <br>
+
+        
+         <label for="gender">Gender:</label><br>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label><br>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label><br>
+         <input type="radio" id="other" name="gender" value="other">
+         <label for="other">Other</label><br>
+     
+
+
+   <br>
+   <label for="brands">Preffered Brand:</label><br>
+    <select id="dropdown" name="cars"  class= "form-input">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="other">Audi</option>
+    </select><br>        
+
+    <br>
+
+    <label for="exceptions">Extras</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>
+
+    <br>
+    <label for="Additional">Any Suggestions?</label><br>
+    <textarea placeholder="Additional info"></textarea><br>
+    <input type="submit" id="submit">
+
+     </form>   
+     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
